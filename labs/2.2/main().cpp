@@ -25,19 +25,19 @@ int main(){
     };
     
     float totalScore = 0;
-    for (int i = 0; i < 7; i++)
+    for (int i = 0; i < 6; i++)
     {
         totalScore += myStudents[i].avgScore;
     }
-    float avgGroupScore = totalScore / 7;
+    float avgGroupScore = totalScore / 6;
     cout << "Середній бал групи: " << avgGroupScore << endl;
 
     cout << "Студенти з вищим середнім балом: " << endl;
-    for (int i = 0; i < 7; i++)
+    for (int i = 0; i < 6; i++)
     {
         if (myStudents[i].avgScore > avgGroupScore)
         {
-            cout << "Ім'я: " << myStudents[i].name << ", Бал: " << myStudents[i].avgScore << endl;
+            cout << "Ім'я: " << myStudents[i].name << "Бал: " << myStudents[i].avgScore << endl;
         }
     }
     
